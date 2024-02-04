@@ -1,0 +1,13 @@
+export { default as logo } from "./logo.png";
+export { default as menu } from "./menu.svg";
+export { default as close } from "./close.svg";
+export { default as discount } from "./discount.svg";
+export { default as robot } from "./robot.png";
+export { default as card } from "./card.png";
+export { default as bill } from "./bill.png";
+export { default as gplay } from "./gplay.png";
+export { default as astore } from "./astore.png";
+export { default as star } from "./star.svg";
+export { default as shield } from "./shield.svg";
+export { default as send } from "./send.svg";
+export { default as quoto } from "./quoto.svg";

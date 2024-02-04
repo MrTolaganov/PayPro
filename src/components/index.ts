@@ -1,0 +1,12 @@
+export { default as Navbar } from "./navbar.jsx";
+export { default as Home } from "./home.jsx";
+export { default as Button } from "./button.jsx";
+export { default as Statistics } from "./statistics.jsx";
+export { default as Contract } from "./contract.jsx";
+export { default as Billing } from "./billing.jsx";
+export { default as Business } from "./business.jsx";
+export { default as FeatureCard } from "./feature-card.jsx";
+export { default as CTA } from "./cta.jsx";
+export { default as Testimonials } from "./testimonials.jsx";
+export { default as FeedbackCard } from "./feedback-card.jsx";
+export { default as Footer } from "./footer.jsx";

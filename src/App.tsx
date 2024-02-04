@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { styles } from "./utils/style";
+import {
+  Home,
+  Navbar,
+  Statistics,
+  Contract,
+  Billing,
+  Business,
+  CTA,
+  Testimonials,
+  Footer,
+} from "./components";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="bg-primary w-full overflow-hidden">
+      {/* Navbar */}
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.container}`}>
+          <Navbar />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
 
-export default App
+      {/* Home */}
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.container}`}>
+          <Home />
+        </div>
+      </div>
+
+      {/* Statistics */}
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.container}`}>
+          <Statistics />
+          <Contract />
+          <Billing />
+          <Business />
+          <Testimonials />
+          <CTA />
+          <Footer />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
